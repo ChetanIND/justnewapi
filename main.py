@@ -32,7 +32,7 @@ credentials_firebase = {
 }
 
 # Initialize Firebase Admin SDK
-cred = credentials.Certificate()
+cred = credentials.Certificate(credentials_firebase)
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
